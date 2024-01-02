@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Prueba android 2.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="pine_attic_4k.hdr" exposure="1" shadow-softness="1" auto-rotate camera-orbit="87.04deg 69.6deg 4.427m" field-of-view="30deg" tone-mapping="commerce">
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.21920574270093354m 1.9743926798381914m 0.12870149058531222m" data-normal="-0.8700861725593209m 1.526252393795674e-8m 0.49289963716873597m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Lamp</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.07788409585482983m 0.885889076974328m 0.07931059029491608m" data-normal="0.47139571795239815m -1.8223333807559568e-7m 0.8819218089468646m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Luz</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
